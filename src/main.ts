@@ -2,7 +2,7 @@ import {desk} from "@shared/desk";
 import {wrap} from "@shared/surface";
 let kit=[["Washer",4],["Screw",2],["Nut",1]] as [string,number][];
 type S={at:number;have:Record<string,number>};function qty(s:S,k:[string,number]){return Math.min(k[1],s.have[k[0]]||0);}
-desk<S>({name:"Pick List",accent:"#A9DA64",motion:{"motif":"stations","color":"#A9DA64","shine":"#EFFDB9"},initial:()=>({at:0,have:{}}),configure:(s,v)=>{
+desk<S>({name:"Pick List",accent:"#A9DA64",motion:{enabled:false},initial:()=>({at:0,have:{}}),configure:(s,v)=>{
  const rows=String(v.kit||"").split(";").map(t=>t.split("|")).filter(a=>a[0]?.trim()&&Number(a[1])>0);
  if(rows.length)kit=rows.slice(0,10).map(a=>[a[0].trim().slice(0,20),Math.min(200,Math.floor(Number(a[1])))]);s.at%=kit.length;},
  render:s=>{const k=kit[s.at],have=qty(s,k),sum=kit.reduce((n,t)=>n+qty(s,t),0),want=kit.reduce((n,t)=>n+t[1],0);
