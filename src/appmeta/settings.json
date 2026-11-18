@@ -1,0 +1,12 @@
+{
+  "format_version": 1,
+  "version": 1,
+  "fields": {
+    "kit": {
+      "type": "string",
+      "label": "Parts and quantities",
+      "default": "Washer|4;Screw|2;Nut|1",
+      "max_length": 160
+    }
+  }
+}

@@ -4,6 +4,6 @@
   "name": "Pick List",
   "version": "0.1.0",
   "api_version": "27.12.0",
-  "description": "Pick List",
+  "description": "Pick the exact quantity of each part, skip missing lines, and check the remaining kit.",
   "author": "ncoooooper"
 }
