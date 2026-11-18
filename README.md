@@ -4,6 +4,20 @@ Pick the exact quantity of each part, skip missing lines, and check the remainin
 
 A packing checklist can tell you that screws are needed without telling you whether all four made it into the box. Pick List keeps a separate count for each part and a total for the kit.
 
+## Screen transitions
+
+Mark picked items, then correct a quantity and check the list again.
+
+![Pick List front display. Mark picked items, then correct a quantity and check the list again.](media/guide/screen-transitions.gif)
+
+<details>
+
+<summary>Watch the rear display</summary>
+
+![Pick List rear display during the recorded controls](media/guide/screen-transitions-rear.gif)
+
+</details>
+
 ## Pick a partial quantity
 
 1. Enter part names and needed quantities in device settings, for example `Washer|4;Screw|2;Nut|1`. Use a distinct name for each type of part.
@@ -34,7 +48,7 @@ Open BUSY Bar Emulator. From this repository, run:
 
 Press **Back** to exit.
 
-The GIFs are excerpts from the emulator recording. Each front-display pixel is shown at 9× its original width and height. The end frames pause for reading.
+The GIFs are excerpts from the emulator recording. Each LED occupies a 16 × 16 cell with a black border. The end frames pause for reading.
 
 [Full recording](media/controls.mp4) · [Rear display](screenshots/back-1.png) · [Firmware test](EMULATOR-QA.md) · [MIT license](LICENSE)
 

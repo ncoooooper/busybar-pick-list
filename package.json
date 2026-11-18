@@ -1,7 +1,7 @@
 {
   "name": "busybar-pick-list",
   "private": true,
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Pick the exact quantity of each part, skip missing lines, and check the remaining kit.",
   "author": "ncoooooper",
   "type": "module",
