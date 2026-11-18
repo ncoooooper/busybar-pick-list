@@ -6,12 +6,9 @@ A packing checklist can tell you that screws are needed without telling you whet
 
 ## Pick a partial quantity
 
-1. Enter part names and needed quantities in device settings, for example `Washer
-2. 4;Screw
-3. 2;Nut
-4. 1`. Use a distinct name for each type of part.
-5. Turn to **Washer** and click once for each washer you place in the kit. The front tracks picked quantity against the requirement.
-6. Turn to another line if a bin is empty. The quantity already picked stays with the original part.
+1. Enter part names and needed quantities in device settings, for example `Washer|4;Screw|2;Nut|1`. Use a distinct name for each type of part.
+2. Turn to **Washer** and click once for each washer you place in the kit. The front tracks picked quantity against the requirement.
+3. Turn to another line if a bin is empty. The quantity already picked stays with the original part.
 
 ![The Washer line advances from 0/4 to 1/4 and then 2/4.](media/guide/pick-two-washers.gif)
 
@@ -40,3 +37,9 @@ Press **Back** to exit.
 The GIFs are excerpts from the emulator recording. Each front-display pixel is shown at 9× its original width and height. The end frames pause for reading.
 
 [Full recording](media/controls.mp4) · [Rear display](screenshots/back-1.png) · [Firmware test](EMULATOR-QA.md) · [MIT license](LICENSE)
+
+## Device settings
+
+Open **Apps → Pick List → Setup**. Save the fields and reopen the app to use the new values.
+
+- **Parts and quantities** (`kit`). Default: `Washer|4;Screw|2;Nut|1`.
